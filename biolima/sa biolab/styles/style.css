@@ -1,0 +1,566 @@
+@import url('Inter');
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+
+header{
+  width: 100%;
+  background-image: linear-gradient(to right, #D3ECEF, #E9F3DB);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 55px;
+
+}
+
+.menu{
+  display: flex;
+  gap: 30px;
+  
+}
+
+.menu a{
+  text-decoration: none;
+  color: #005483;
+  font-weight: bold;
+}
+
+.logo{
+  color: #005483;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.logo span{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.btn-top{
+  background: #005483;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px 22px;
+
+  cursor: pointer;
+  font-family: "Inter",sans-serif;
+  font-weight: bold;
+}
+
+.home img{
+  display: flex;
+  width: 100%;
+}
+
+/* HERO */
+
+.hero{
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+
+  padding: 60px;
+}
+
+.hero-image{
+  background-image: linear-gradient(to bottom, #D3ECEF, #E9F3DB);
+  padding: 40px;
+}
+
+.hero-image img{
+  width: 100%;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-content h1{
+  font-family:  "Inter", sans-serif;
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 1;
+
+  color: #00537F;
+
+  margin-bottom: 15px;
+}
+
+.hero-content p{
+  color: #333;
+  
+
+  margin-bottom: 25px;
+}
+
+.form{
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.form input{
+  flex: 1;
+
+  padding: 10px;
+
+  border: 1px solid #999;
+}
+
+.form button{
+  background: #00537F;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 14px 24px;
+
+  cursor: pointer;
+}
+
+.small-text{
+  font-size: 12px;
+  color: #777;
+}
+
+
+/* =========================
+   GENTE & GESTÃO
+========================= */
+
+.gestao{
+
+  background: #f5f5f5;
+  width: 100%;
+}
+
+
+
+.gestao-top{
+  
+  margin-bottom: 60px;
+  width: 100%;
+  margin-top: -100px;
+}
+
+.gestao-top h2{
+  font-size: 64px;
+  color: #005483;
+  margin-bottom: 25px;
+  justify-content: center;
+  margin: 80px;
+}
+
+.gestao-top p{
+  font-size: 24px;
+  margin: 80px;
+  color: #222;
+}
+
+
+.cards{
+  display: flex;
+  grid-template-columns: repeat(4,150px);
+  gap: 30px;
+  width: 100%;
+}
+
+.gestao-top{
+  width: 100%;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.gestao-top h2{
+  font-size: 64px;
+  color: #005483;
+  margin-bottom: 15px;
+  justify-content: center;
+  
+}
+
+.gestao-top p{
+  font-size: 20px;
+  justify-content: flex-start;
+  color: #222;
+}
+
+/* CARDS */
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  gap:5px;
+  align-items: center;
+}
+
+.card{
+  background: #005483;
+
+  width: 260px;
+  height: 430px;
+  margin: 80px;
+
+  border-radius: 20px;
+
+  padding: 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card img{
+  width: 120px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.card h3{
+  color: white;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos{
+  padding: 80px 60px;
+  background: #f5f5f5;
+}
+
+.produtos-top{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 60px auto;
+}
+
+.produtos-top h2{
+  font-size: 56px;
+  color: #003f73;
+  margin-bottom: 20px;
+}
+
+.produtos-top p{
+  font-size: 20px;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* CAROUSEL */
+
+.carousel{
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtos-container{
+  display: flex;
+  gap: 30px;
+}
+
+/* CARD */
+
+.produto-card{
+  width: 320px;
+  height: 300px;
+
+  border: 1px solid #777;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  transition: 0.3s;
+}
+
+.produto-card:hover{
+  transform: scale(1.03);
+}
+
+.produto-card img{
+  width: 70%;
+  height: 70%;
+
+}
+
+/* =========================
+   AVALIAÇÕES
+========================= */
+
+.avaliacoes{
+  padding: 100px 60px;
+  background: #f5f5f5;
+}
+
+.avaliacoes h2{
+  text-align: center;
+
+  font-size: 56px;
+  color: #005483;
+
+  margin-bottom: 70px;
+}
+
+/* CONTAINER */
+
+.avaliacoes-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.avaliacao-card{
+  width: 350px;
+
+  transition: 0.3s;
+}
+
+.avaliacao-card:hover{
+  transform: translateY(-8px);
+}
+
+/* USER */
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.user img{
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.user h3{
+  font-size: 18px;
+  color: #222;
+}
+
+.stars{
+  color: #f4c400;
+  font-size: 20px;
+}
+
+/* TEXTO */
+
+.avaliacao-card p{
+  font-size: 22px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  padding: 70px 60px 30px;
+  background: #f5f5f5;
+}
+
+/* TITULO */
+
+.footer h2{
+  font-size: 60px;
+  color: #005483;
+
+  margin-bottom: 70px;
+}
+
+/* TOPO */
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  margin-bottom: 120px;
+
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.footer-card{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+}
+
+.footer-card img{
+  width: 42px;
+}
+
+.footer-card h3{
+  font-size: 42px;
+  color: #005483;
+}
+
+.footer-card a{
+  color: #222;
+  text-decoration: underline;
+
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* CENTRO */
+
+.footer-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+.footer-center h1{
+  font-size: 54px;
+  color: #005483;
+}
+
+.footer-center span{
+  margin-top: -10px;
+
+  color: #005483;
+  font-weight: bold;
+}
+
+.footer-center p{
+  color: #1992d4;
+
+  margin: 10px 0 20px;
+}
+
+/* REDES */
+
+.socials{
+  display: flex;
+  gap: 14px;
+}
+
+.socials img{
+  width: 28px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.socials img:hover{
+  transform: scale(1.1);
+}
+
+/* LINHA */
+
+.footer-line{
+  width: 100%;
+  height: 1px;
+
+  background: #777;
+
+  margin-bottom: 25px;
+}
+
+/* FINAL */
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p{
+  color: #222;
+  font-size: 16px;
+}
+
+.footer-links{
+  display: flex;
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.footer-links a{
+  color: #222;
+  font-size: 16px;
+}
+
+.biolab-em-casa{
+  display: flex;
+  align-items: baseline;
+  
+  
+}
+
+.footer-center img{
+  height: 100px;
+  width: 100px;
+}
+
+.socials img{
+  display: flex;
+  width: 50px;
+  
+  
+}
+
+.tiktok img{
+  width: 65px;
+  
+}
+
+
+
+
+
+
+
+
